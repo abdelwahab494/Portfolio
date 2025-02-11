@@ -397,7 +397,7 @@ nav ul li a:hover{
     flex-direction: column;
 
     .container {
-        width: 100%;
+        width: 85%;
         margin: auto;
         background: var(--bgcolor-2);
         padding: 20px;
