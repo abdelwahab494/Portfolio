@@ -69,6 +69,18 @@ p{
     display: flex;
     flex-direction: column;
 }
+.up{
+    position: fixed;
+    bottom: 10px;
+    right: -100px;
+    padding: 0.7rem .87rem;
+}
+.up.show{
+    right: 10px;
+}
+.btn.up{
+    padding: .81rem 1rem;
+}
 
 span{
     color: var(--primarycolor);
@@ -85,11 +97,17 @@ nav{
     h2{
         font-size: 1.2rem;
     }
+    ul{
+        .btn{
+            margin-left: 160px;
+        }
+    }
 }
 nav ul li{
     list-style-type: none;
     display: inline-block;
     margin: 0.8rem 1.5rem;
+
 }
 nav ul li a{
     text-decoration: none;
@@ -174,6 +192,42 @@ nav ul li a:hover{
 }
 .home .container-image:hover .pic{
     left: 45%;
+}
+
+#menu{
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none; 
+    background: none;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+
+    span{
+        display: block;
+        width: 32px;
+        height: 4px;
+        background-color: var(--lightcolor);
+        border-radius: 6px;
+        transform-origin: 0 0;
+        transition: 0.4s;
+        margin-bottom: 5px;
+    }
+}
+
+#menu.is-active span:nth-child(1) { 
+    transform: translate(0px, -2px) rotate(45deg);
+}
+#menu.is-active span:nth-child(2) { 
+    opacity: 0;
+    transform: translateX(15px);
+}
+#menu.is-active span:nth-child(3) { 
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+#menu.is-active span{ 
+    background-color: var(--primarycolor);    
 }
 
 .about{
@@ -395,17 +449,17 @@ nav ul li a:hover{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    width: 100%;
 
     .container {
-        width: 85%;
+        width: 90%;
         margin: auto;
         background: var(--bgcolor-2);
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
     }
     .project {
         height: auto;
@@ -417,12 +471,28 @@ nav ul li a:hover{
         border-radius: 5px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         color: var(--text);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
 
+        a{
+            height: 350px;
+            width: 30%;
+            text-decoration: none;
+        }
         img{
-            height: 200px;
+            height: 350px;
             width: 100%;
-            margin-bottom: 10px;
             border-radius: 10px;
+        }
+        img:hover{
+            transform: scale(1.05, 1.05);
+            transition: .3s;
+        }
+        .text_container{
+            width: 1000px;
         }
         h3{
             color: var(--primary);
@@ -436,6 +506,7 @@ nav ul li a:hover{
             color: var(--text);
             font-size: .8rem;
             padding: 3px 0;
+            line-height: 1.5rem;
 
             b{
                 padding: 5px;
@@ -506,5 +577,29 @@ footer{
         justify-content: center;
         font-size: 13px;
         letter-spacing: 1px;
+    }
+}
+
+
+
+/* responsive for phones */
+@media screen and (max-width:500px) {
+    nav ul.is-active{
+        display: block;
+    }
+    #menu{
+        display: block;
+        margin-right: 19px;
+    }
+    .up{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i{
+            font-size: 14px;
+        }
     }
 }

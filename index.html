@@ -12,14 +12,19 @@
     <section class="home" id="home">
         <nav>
             <h2>Abdelwahab <span>MO.</span></h2>
-            <ul>
+            <ul id="action">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#education">education</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <a href="#footer" class="btn">Contact Me</a>
             </ul>
-            <a href="#footer" class="btn">Contact Me</a>
+            <button id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
         <div class="content">
             <div class="container-text">
@@ -43,6 +48,7 @@
                 <img src="images/abdelwahab.pic.png" alt="" class="pic">
             </div>
         </div>
+        <a href="#home" class="up btn"><i class="fa-solid fa-arrow-up"></i></a>
     </section>
     <section class="about" id="about">
         <div class="about1">
@@ -183,40 +189,52 @@
         <h1><span>Projects</span></h1>
         <div class="container">
             <div class="project">
-                <img src="images/project1.png" alt="">
-                <hr>
-                <h3>E-commerce data analysis & Dashboards</h3>
-                <p><strong>Freelance Project | 2025</strong></p>
-                <p><strong>Challenge: </strong>E-commerce businesses struggle to analyze performance trends and optimize decision-making.</p>
-                <p><strong>Solution:</strong> Conducted a 4-year performance analysis for an e-commerce company in the USA.</p>
-                <ul>
-                    <li>Used SQL and Tableau Prep for data cleaning and preparation.</li>
-                    <li>Built interactive dashboards in Tableau for visualization of key metrics like revenue, customer demographics, and sales trends.</li>
-                </ul>
-                <p><strong>Tools & Technologies:</strong><br> <b>SQL</b>, <b>Tableau</b>, <b>Tableau Prep</b>, <b>Data Cleaning</b>, <b>Data Visualization</b></p>
-                <p><strong>Results:</strong> Improved data-driven decision-making, optimized marketing strategies, and enhanced overall business performance.</p>
+                <a href="https://github.com/abdelwahab494/Sales-Forecasting-and-Demand-Prediction.git" target="_blank"><img src="images/Sales Forecasting & Demand Prediction.png" alt=""></a>
+                <div class="text_container">
+                    <a href="https://github.com/abdelwahab494/Sales-Forecasting-and-Demand-Prediction.git" target="_blank"><h3>Sales Forecasting & Demand Prediction</h3></a>
+                    <p><strong>EYOUTH DEPI Graduation Project | 2025</strong></p>
+                    <p><strong>Challenge: </strong>Businesses struggle with inventory management, staffing, and marketing due to inaccurate sales forecasting.</p>
+                    <p><strong>Solution: </strong>Developed a machine learning model to predict future sales and demand based on historical data.</p>
+                    <ul>
+                        <li>Conducted exploratory data analysis (EDA) to identify trends, seasonality, and factors affecting demand.</li>
+                        <li>Engineered features like time-based attributes, lag features, and external factors (holidays, promotions).</li>
+                        <li>Deployed an interactive dashboard to visualize sales predictions and key business insights.</li>
+                    </ul>
+                    <p><strong>Tools & Technologies:</strong><br> <b>Python</b>, <b>Pandas</b>, <b>NumPy</b>, <b>Data Cleaning</b>, <b>Matplotlib</b>, <b>Seaborn</b>, <b>Time Series Analysis</b>, <b>Data Visualization</b></p>
+                    <p><strong>Results:</strong> Improved demand prediction accuracy, optimized inventory management, and enhanced decision-making for marketing and sales strategies.</p>
+                </div>
             </div>
             <div class="project">
-                <img src="images/project2.jpeg" alt="">
-                <hr>
-                <h3>Customer Churn Prediction System</h3>
-                <p><strong>Freelance Project | 2024</strong></p>
-                <p><strong>Challenge:</strong> Businesses struggle to predict customer churn, leading to financial losses.</p>
-                <p><strong>Solution:</strong> Developed a machine learning model using Scikit-Learn to analyze customer data and predict potential churn.</p>
-                <p>Built an interactive dashboard using Tableau to visualize high-risk customers.</p>
-                <p><strong>Tools & Technologies:</strong><br> <b>Python (Pandas, NumPy, Scikit-Learn)</b>, <b>Tableau</b>, <b>Matplotlib</b></p>
-                <p><strong>Results:</strong> Reduced churn rate by 15% and improved customer retention by 10%.</p>
+                <a href="https://github.com/abdelwahab494/Olist-Sales-Analysis.git" target="_blank"><img src="images/Olist Sales Analysis.png" alt=""></a>
+                <div class="text_container">
+                    <a href="https://github.com/abdelwahab494/Olist-Sales-Analysis.git" target="_blank"><h3>Olist Sales Analysis</h3></a>
+                    <p><strong>Practice Project | 2024</strong></p>
+                    <p><strong>Challenge:</strong> E-commerce businesses need to identify sales trends, top-performing products, and high-revenue sellers to optimize strategies.</p>
+                    <p><strong>Solution:</strong> Conducted an in-depth sales analysis for Olist, a Brazilian e-commerce platform, using SQL and Python.</p>
+                    <ul>
+                        <li>Extracted insights from an SQLite database containing orders, products, sellers, and customer data.</li>
+                        <li>Analyzed total sales per seller, best-selling products, and monthly revenue trends.</li>
+                        <li>Visualized key findings using Pandas, Matplotlib, and Seaborn.</li>
+                    </ul>
+                    <p><strong>Tools & Technologies:</strong><br> <b>Python</b>, <b>SQL</b>, <b>SQLite</b>, <b>Pandas</b>, <b>Matplotlib</b>, <b>Data Analysis</b>, <b>Data Visualization</b></p>
+                    <p><strong>Results:</strong> Provided data-driven insights into sales trends, optimized inventory and marketing strategies, and identified high-revenue sellers and products.</p>
+                </div>
             </div>
             <div class="project">
-                <img src="images/project3.png" alt="">
-                <hr>
-                <h3>Retail Sales Forecasting System</h3>
-                <p><strong>Freelance Project | 2023</strong></p>
-                <p><strong>Challenge:</strong> Retail stores face difficulties in forecasting sales, leading to inventory mismanagement.</p>
-                <p><strong>Solution:</strong> Built a time series forecasting model using ARIMA and LSTM to predict monthly sales.</p>
-                <p>Developed an interactive Power BI dashboard to visualize forecasts and analyze trends.</p>
-                <p><strong>Tools & Technologies:</strong><br> <b>Python (Pandas, NumPy, TensorFlow)</b>, <b>ARIMA</b>, <b>LSTM</b>, <b>Power BI</b></p>
-                <p><strong>Results:</strong> Improved sales forecasting accuracy by 20% and increased operational efficiency by 18%.</p>
+                <a href="https://github.com/abdelwahab494/Retail-Store-Inventory-Forecasting.git" target="_blank"><img src="images/Retail Store Inventory Forecasting.png" alt=""></a>
+                <div class="text_container">
+                    <a href="https://github.com/abdelwahab494/Retail-Store-Inventory-Forecasting.git" target="_blank"><h3>Retail Store Inventory Forecasting</h3></a>
+                    <p><strong>Freelance Project | 2025</strong></p>
+                    <p><strong>Challenge:</strong> Retail businesses struggle with inventory management, demand forecasting, and detecting sales anomalies.</p>
+                    <p><strong>Solution:</strong> Conducted an Exploratory Data Analysis (EDA) to optimize inventory forecasting and sales prediction.</p>
+                    <ul>
+                        <li>Cleaned and preprocessed data, handling missing values and removing inconsistencies.</li>
+                        <li>Identified anomalies in inventory levels and sales patterns.</li>
+                        <li>Visualized key insights using Matplotlib, Seaborn, and Plotly for interactive analysis.</li>
+                    </ul>
+                    <p><strong>Tools & Technologies:</strong><br> <b>Python</b>, <b>Pandas</b>, <b>NumPy</b>, <b>Matplotlib</b>, <b>Seaborn</b>, <b>Plotly</b>, <b>Data Analysis</b>, <b>Data Visualization</b></p>
+                    <p><strong>Results:</strong> Improved demand forecasting accuracy, optimized inventory levels, and enhanced decision-making for promotions and pricing strategies.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -252,5 +270,6 @@
             <pre> Copyright&copy;2025  Abdelwahab Mo.  |  All right reserved</pre>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
